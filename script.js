@@ -16,3 +16,13 @@ const quotes = [
 // DOM elements
 const quote = document.querySelector(".quote");
 const button = document.querySelector(".genBtn");
+
+//Random quotes function
+const randomQuote = function () {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  quote.textContent = quotes[randomIndex];
+};
+
+button.addEventListener("click", function () {
+  randomQuote();
+});
