@@ -12,7 +12,7 @@ const quotes = [
   "Opportunities don’t happen, you create them. — Chris Grosser",
   "You don’t have to be great to start, but you have to start to be great. — Zig Ziglar",
 ];
-
+let lastIndex = null;
 // DOM elements
 const quote = document.querySelector(".quote");
 const button = document.querySelector(".genBtn");
